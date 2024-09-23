@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1f8e8; 
+    color: #1f472e; 
+    padding-top: 60px; 
+}
+
+/* nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9cc891; 
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid white;
+}
+
+/* about me */
+#about-me {
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: #d3ecd4; 
+    border-radius: 15px; 
+}
+
+#about-me img {
+    width: 600px;
+    border: none;
+}
+
+#about-me p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 60px 0 20px 0; 
+}
+
+
+/* footer */
+footer {
+    background-color: #9cc891; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* resume */
+
+.resume-section {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-bottom: 1px solid #ccc; 
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+h4, ul, p {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 2em;
+}
+
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* contact page */
+/* Reset default padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the form container */
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+/* Uniform style for all labels */
+.form-label {
+    width: 80%;
+    margin: 5px auto;
+    display: block;
+    text-align: left; 
+}
+
+/* Uniform style for all input fields and textarea */
+.form-input, .form-textarea , .form-put{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin: 5px auto;
+    display: block;
+}
+
+/* Style for the button */
+.form-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px; 
+    margin: 10px auto; 
+    padding: 10px;
+}
