@@ -161,3 +161,53 @@ footer {
 .blog-content a:hover {
     text-decoration: underline;
 }
+
+
+#about-me img {
+    width: 300px; 
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+
+#about-me {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#about-me p {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 800px; 
+}
+
+
+.resume-section {
+    margin-bottom: 30px; 
+    padding: 20px; 
+    border-bottom: 1px solid #444; 
+}
+
+.resume-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px; 
+}
+
+.resume-section p, .resume-section ul {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 15px;
+}
+
+.resume-section ul {
+    padding-left: 20px; 
+}
+
+.resume-section ul li {
+    margin-bottom: 10px; 
+}
