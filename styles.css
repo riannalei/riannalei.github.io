@@ -1,3 +1,4 @@
+/* Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +6,15 @@
     font-size: 100%;
 }
 
-/* body */
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e1f8e8; 
+    background-color: #e1f8e8;  /* Light, neutral background */
     color: #1f472e; 
-    padding-top: 60px; 
+    padding-top: 60px;
 }
 
-/* nav bar */
+/* Nav bar */
 nav {
     position: fixed;
     top: 0;
@@ -24,21 +25,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 #name {
     margin-left: 20px;
     font-size: 24px;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 nav ul {
     margin-right: 20px;
+    list-style-type: none;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -47,39 +50,52 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a.active {
+nav ul li a.active,
+nav ul li a:hover {
     border-bottom: 3px solid white;
 }
 
-/* about me */
+/* About Me Section */
 #about-me {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px;
-    padding: 20px;
-    background-color: #d3ecd4; 
-    border-radius: 15px; 
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #d3ecd4; /* Light background */
+    border-radius: 15px;
+    width: 80%;
 }
 
 #about-me img {
-    width: 600px;
-    border: none;
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Circular profile image */
+    border: 3px solid #1f472e; /* Optional border around the profile picture */
 }
 
 #about-me p {
     font-size: 18px;
     max-width: 500px;
+    color: #1f472e;
 }
 
+/* Headings */
 h1 {
     text-align: center;
     font-size: 36px;
-    margin: 60px 0 20px 0; 
+    margin: 60px 0 20px 0;
+    color: #1f472e;
 }
 
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #1f472e;
+    margin-bottom: 20px;
+}
 
-/* footer */
+/* Footer */
 footer {
     background-color: #9cc891; 
     color: white;
@@ -88,6 +104,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
 }
 
 main {
@@ -97,84 +114,47 @@ main {
     text-align: center;
 }
 
-/* resume */
-
-.resume-section {
-    margin-bottom: 2em;
-    padding: 1em;
-    border-bottom: 1px solid #ccc; 
-}
-
-h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-
-h4, ul, p {
-    margin-left: 1em;
-    margin-bottom: 1em;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 2em;
-}
-
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* contact page */
-/* Reset default padding and margin */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style for the form container */
+/* Form Styling for Contact Page */
 .form-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* Uniform style for all labels */
 .form-label {
     width: 80%;
     margin: 5px auto;
     display: block;
-    text-align: left; 
+    text-align: left;
+    color: #1f472e;
 }
 
-/* Uniform style for all input fields and textarea */
-.form-input, .form-textarea , .form-put{
-    padding: 5px;
+.form-input, .form-textarea {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 80%;
-    margin: 5px auto;
+    margin: 10px auto;
     display: block;
+    background-color: #f8f8f8;
 }
 
-/* Style for the button */
 .form-button {
     background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
-    width: 120px; 
-    margin: 10px auto; 
+    font-size: 16px;
+    width: 120px;
+    margin: 10px auto;
     padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #005b80;
 }
